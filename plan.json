@@ -1,0 +1,133 @@
+{
+    "manifest": {
+        "time": "2025-08-07T15:55:25.853373-04:00",
+        "magic": "bccfc6bbce89c8611ec3c1413d635db38cb520fae7a874c4ac869bef2ce8b076",
+        "version": "v3.186.0"
+    },
+    "config": {
+        "gcp:project": "gcp-python-container",
+        "pulumi:tags": {
+            "pulumi:template": "gcp-python"
+        }
+    },
+    "resourcePlans": {
+        "urn:pulumi:dev-container::gcp-python-container::gcp:storage/bucket:Bucket::my-bucket": {
+            "goal": {
+                "type": "gcp:storage/bucket:Bucket",
+                "name": "my-bucket",
+                "custom": true,
+                "inputDiff": {
+                    "adds": {
+                        "__defaults": [
+                            "forceDestroy",
+                            "name",
+                            "storageClass"
+                        ],
+                        "forceDestroy": false,
+                        "location": "US",
+                        "name": "my-bucket-fe7bb0e",
+                        "storageClass": "STANDARD"
+                    }
+                },
+                "outputDiff": {},
+                "parent": "urn:pulumi:dev-container::gcp-python-container::pulumi:pulumi:Stack::gcp-python-container-dev-container",
+                "protect": false,
+                "provider": "urn:pulumi:dev-container::gcp-python-container::pulumi:providers:gcp::default_8_39_0::7be21195-72ae-4310-a11e-259d6a8df560",
+                "propertyDependencies": {
+                    "location": []
+                },
+                "additionalSecretOutputs": [
+                    "effectiveLabels",
+                    "pulumiLabels"
+                ],
+                "customTimeouts": {}
+            },
+            "steps": [
+                "create"
+            ],
+            "state": {
+                "__meta": "{\"_new_extra_shim\":{\"location\":\"US\"},\"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0\":{\"create\":600000000000,\"read\":240000000000,\"update\":240000000000}}",
+                "autoclass": null,
+                "cors": [],
+                "customPlacementConfig": null,
+                "defaultEventBasedHold": null,
+                "effectiveLabels": {
+                    "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                    "ciphertext": "AAABAKKdNnFS+cCq3k+Pp0+pSL2ROea2Ab+B102/g6EPVnAWpUoiJ2gm11KuUhVyAOO92hQr0QPevJ50gwGWYJFc"
+                },
+                "enableObjectRetention": null,
+                "encryption": null,
+                "forceDestroy": false,
+                "hierarchicalNamespace": null,
+                "id": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "ipFilter": null,
+                "labels": null,
+                "lifecycleRules": [],
+                "location": "US",
+                "logging": null,
+                "name": "my-bucket-fe7bb0e",
+                "project": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "projectNumber": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "publicAccessPrevention": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "pulumiLabels": {
+                    "4dabf18193072939515e22adb298388d": "1b47061264138c4ac30d75fd1eb44270",
+                    "ciphertext": "AAABAPL1o9RFJo8MGgoQNtFF6n3c0bjYGCc7cRNZby2cdL7e+in0yt2PkhyX3gosmEBUMRkX8nKrrpTdzSbx26aM"
+                },
+                "requesterPays": null,
+                "retentionPolicy": null,
+                "rpo": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "selfLink": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "softDeletePolicy": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "storageClass": "STANDARD",
+                "timeCreated": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "uniformBucketLevelAccess": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "updated": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "url": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "versioning": "04da6b54-80e4-46f7-96ec-b56ff0331ba9",
+                "website": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
+            },
+            "seed": "CodOZBk2CbvzhF60+X0FQas5O23+wbifDdMpCMP8p5Q="
+        },
+        "urn:pulumi:dev-container::gcp-python-container::pulumi:providers:gcp::default_8_39_0": {
+            "goal": {
+                "type": "pulumi:providers:gcp",
+                "name": "default_8_39_0",
+                "custom": true,
+                "inputDiff": {},
+                "outputDiff": {},
+                "protect": false,
+                "customTimeouts": {}
+            },
+            "steps": [
+                "same"
+            ],
+            "state": {
+                "project": "gcp-python-container",
+                "version": "8.39.0"
+            },
+            "seed": "L28Ek+p5PlRbR3dqbexEZ7bGoXpT67Bc7g9yQDTcPUE="
+        },
+        "urn:pulumi:dev-container::gcp-python-container::pulumi:pulumi:Stack::gcp-python-container-dev-container": {
+            "goal": {
+                "type": "pulumi:pulumi:Stack",
+                "name": "gcp-python-container-dev-container",
+                "custom": false,
+                "inputDiff": {},
+                "outputDiff": {
+                    "adds": {
+                        "bucket_name": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
+                    }
+                },
+                "protect": false,
+                "customTimeouts": {}
+            },
+            "steps": [
+                "same"
+            ],
+            "state": {
+                "bucket_name": "04da6b54-80e4-46f7-96ec-b56ff0331ba9"
+            },
+            "seed": "R4GrsX5eAA3YVPzYsJImv0ghNr6dvXfc+OXCgELInQ4="
+        }
+    }
+}

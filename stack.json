@@ -1,0 +1,47 @@
+{
+    "version": 3,
+    "deployment": {
+        "manifest": {
+            "time": "2025-08-07T11:02:42.530592-04:00",
+            "magic": "bccfc6bbce89c8611ec3c1413d635db38cb520fae7a874c4ac869bef2ce8b076",
+            "version": "v3.186.0"
+        },
+        "secrets_providers": {
+            "type": "service",
+            "state": {
+                "url": "https://api.pulumi.com",
+                "owner": "sprasad796-org",
+                "project": "gcp-python-container",
+                "stack": "dev-container"
+            }
+        },
+        "metadata": {},
+        "resources": [
+            {
+                "urn": "urn:pulumi:dev-container::gcp-python-container::pulumi:pulumi:Stack::gcp-python-container-dev-container",
+                "custom": false,
+                "type": "pulumi:pulumi:Stack",
+                "created": "2025-08-06T15:48:59.860852Z",
+                "modified": "2025-08-06T15:48:59.860852Z",
+                "sourcePosition": "project:///venv/lib/python3.13/site-packages/pulumi/runtime/stack.py#169"
+            },
+            {
+                "urn": "urn:pulumi:dev-container::gcp-python-container::pulumi:providers:gcp::default_8_39_0",
+                "custom": true,
+                "id": "7be21195-72ae-4310-a11e-259d6a8df560",
+                "type": "pulumi:providers:gcp",
+                "inputs": {
+                    "__internal": {},
+                    "project": "gcp-python-container",
+                    "version": "8.39.0"
+                },
+                "outputs": {
+                    "project": "gcp-python-container",
+                    "version": "8.39.0"
+                },
+                "created": "2025-08-06T15:49:00.946655Z",
+                "modified": "2025-08-06T17:31:57.441087Z"
+            }
+        ]
+    }
+}
