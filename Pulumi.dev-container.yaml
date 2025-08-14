@@ -1,2 +1,15 @@
 config:
   gcp:project: gcp-python-container
+  pulumi:tags:
+    pulumi:template: gcp-python
+values:
+  gcp:
+    login:
+      fn::open::gcp-login:
+        project: gcp-python-container
+        oidc:
+          workloadPoolId: pulumi-gcp-pool
+          providerId: pulumi-gcp-pool
+          serviceAccount: gcp-python-service@gcp-python-container.iam.gserviceaccount.com
+  environmentVariables:
+    GOOGLE_PROJECT: 190692320819
