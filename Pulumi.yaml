@@ -1,5 +1,12 @@
 name: gcp-python-container
 description: A minimal Google Cloud Python Pulumi program
+outputs:
+  bucketName: ${my-bucket.url}
+resources:
+  my-bucket:
+    properties:
+      location: US
+    type: gcp:storage:Bucket
 runtime:
   name: python
   options:
